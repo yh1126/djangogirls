@@ -135,3 +135,9 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+# 静的ファイル用ディレクトリ追加
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
